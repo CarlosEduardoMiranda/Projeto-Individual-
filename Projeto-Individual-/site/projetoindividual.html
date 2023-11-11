@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+  <title>Copa Libertadores</title>
+</head>
+
+<body>
+
+  <div class="header">
+    <picture>
+    </picture>
+    <a class="logo">Copa Libertadores</a>
+    <div class="header-right">
+      <a class="active" href="#home">Home</a>
+      <a href="#Noticias">Notícias</a>
+      <a href="Historia">Histórias</a>
+      <a href="#Times">Times</a>
+      <a href="#Classificação">Classificação</a>
+      <a href="">Login</a>
+      <a href="">Cadastro</a>
+    </div>
+  </div>
+
+
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+
+    <!-- Imagens do slider / Captions / Números da página -->
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="../Projeto-Individual-/imagens/Flamengo.webp" style="width:100%">
+      <div class="text">
+        <h5>Flamengo Campeão da Competição em 2019</h5>
+        <!-- Dots/"bolinhas" -->
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+      </div>
+    </div>
+
+
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="../Projeto-Individual-/imagens/corinthians-campeao2_rib1024.jpg" style="width:100% ">
+      <div class="text">
+        <h5>Corinthians Campeão da Competição em 2012</h5>
+        <!-- Dots/"bolinhas" -->
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+      </div>
+    </div>
+
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="../Projeto-Individual-/imagens/Santos.webp" style="width:100%">
+      <div class="text">
+        <h5>Santos Campeão da Competição em 2011</h5>
+        <!-- Dots/"bolinhas" -->
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+      </div>
+    </div>
+
+
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="../Projeto-Individual-/imagens/Fluminense.webp" style="width:100%">
+      <div class="text">
+        <h5>Fluminense Campeão da Libertadores 2023</h5>
+        <!-- Dots/"bolinhas" -->
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+      </div>
+    </div>
+
+
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="../Projeto-Individual-/imagens/Palmeiras.jpeg" style="width:100%">
+      <div class="text">
+        <h5>Palmeiras Campeão da Libertadores 2020</h5>
+        <!-- Dots/"bolinhas" -->
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+      </div>
+    </div>
+
+
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="../Projeto-Individual-/imagens/rogerio-ceni-libertadores-2005-original.webp" style="width:100%">
+      <div class="text">
+        <h5>São Paulo Campeão da Libertadores 2005</h5>
+        <!-- Dots/"bolinhas" -->
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+      </div>
+    </div>
+
+
+
+    <!-- Botão de previous e next -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+  <div class="slider">
+    <div class="slides">
+      <!-- Bolinha do carrosel-->
+      <input type="radio" name="radio-btn" id="radio1">
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+      <input type="radio" name="radio-btn" id="radio4">
+      <!-- Fim -->
+
+
+
+
+      <!-- Slide imagens-->
+      <div class="slide first">
+        <img src="../Projeto-Individual-/imagens/Potes-Libertadores-jfif.avif" alt="">
+      </div>
+      <div class="slide">
+        <img src="../Projeto-Individual-/imagens/cassio.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="../Projeto-Individual-/imagens/Final lima.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="../Projeto-Individual-/imagens/Mudial.jpg" alt="">
+      </div>
+      <!-- Fim Slide imagens-->
+
+
+
+      <div class="navigation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+        <div class="auto-btn4"></div>
+      </div>
+
+    </div>
+
+
+    <div class="manual-navigation">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+      <label for="radio4" class="manual-btn"></label>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+  <!-- <div class="row">
+    <div class="card">
+      <h2>História</h2>
+      <p>Veja a História da Competição</p>
+    </div>
+
+    <div class="card red">
+      <h2>Times</h2>
+      <p>Quem são os times que disputam?</p>
+    </div>
+
+    <div class="card blue">
+      <h2>Classificação</h2>
+      <p>Como anda a tabela do campeonato?</p>
+    </div>
+
+  </div>
+
+  </div>
+
+  </div>
+
+  <div class="cardinvisivel-japones" id="id_tela">
+    <div class="title">
+      A Copa Libertadores da América ou Taça Libertadores da América (em espanhol: Copa Libertadores de América), oficialmente CONMEBOL Libertadores, é a principal competição de futebol entre clubes profissionais da América do Sul, organizada pela Confederação Sul-Americana de Futebol (CONMEBOL) desde 1960. É a competição de clubes mais importante do continente, sendo um dos torneios mais prestigiados do mundo, juntamente com a Liga dos Campeões da UEFA. O nome do torneio é uma homenagem aos principais líderes da independência das nações da América do Sul: José Artigas, Simón Bolívar, José de San Martín, José Bonifácio de Andrada e Silva, D. Pedro I do Brasil, Antonio José de Sucre e Bernardo O'Higgins.
+      <div onclick="fecharTela()" >X</div>
+    </div>
+  </div>
+-->
+
+
+<script src="function.js"></script>
+
+
+</body>
+
+</html>
+

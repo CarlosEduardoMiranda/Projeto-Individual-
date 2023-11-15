@@ -367,7 +367,7 @@ justify-content: space-between;
   flex-direction: column;
   display: flex;
   align-items: center;
-  color: #ffffff;
+  font-weight: bold;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -457,6 +457,60 @@ justify-content: space-between;
 #radio4:checked ~ .navigation-auto .auto-btn4{
   background-color: #fff;
 }
+
+.cards-noticias {
+  display: flex;
+  justify-content: space-between; /* ou justify-content: space-around; dependendo do espaçamento desejado */
+}
+
+
+.card {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  
+}
+
+.Imagens{
+  background-image: url(../imagens/FLUxBOCA-JOHN_KENNEDY_2-2.jpg);
+  background-position: center center;
+  width: 100%;
+  height: 320px;
+  background-size: cover;
+  
+}
+
+.imagem-2 {
+  background-image: url(../imagens/dsj4010.webp);
+}
+
+.imagem-3 {
+  background-image: url(../imagens/Time-do-Ano-Libertadores.webp);
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.card-description {
+  color: #daa520;
+}
+
+
 
 .footer {
   overflow: hidden;

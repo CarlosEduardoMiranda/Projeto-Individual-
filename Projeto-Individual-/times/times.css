@@ -31,13 +31,81 @@ body {
   }
  
 
-  .times-32{
+  /*.times-32{
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    width: 1300px;
+    flex-wrap: wrap;
+  }*/
+
+  .grupoA{
     margin: auto;
     justify-content: space-between;
     display: flex;
     width: 1300px;
     flex-wrap: wrap;
   }
+
+  .grupoB{
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    width: 1300px;
+    flex-wrap: wrap;
+  }
+
+  .grupoC{
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    width: 1300px;
+    flex-wrap: wrap;
+  }
+
+  .grupoD{
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    width: 1300px;
+    flex-wrap: wrap;
+  }
+
+  .grupoE{
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    width: 1300px;
+    flex-wrap: wrap;
+  }
+
+  .grupoF{
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    width: 1300px;
+    flex-wrap: wrap;
+  }
+
+  .grupoG{
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    width: 1300px;
+    flex-wrap: wrap;
+  }
+
+  .grupoH{
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    width: 1300px;
+    flex-wrap: wrap;
+  }
+
+
+
+  
 
 
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="../public/css/quiz.css">
 
     <title>Quiz</title>
 </head> 
@@ -11,16 +11,17 @@
 <body>
     <div class="header">
         <div class="botao_voltar">
-            <button onclick="voltar()"><a href="file:///C:/Users/Raiss/Documents/SPtech/NARUTO/narutoo/Projeto-Individual/personagens/personagens.html">Voltar</a></button>
+            <button onclick="voltar()"><a href="../public/dashboard/tela.html">Voltar a tela da dashboard</a></button>
         </div>
     </div>
 
     <div class="container container_personalizado">
         <h1>Quiz da Copa libertadores </h1>
         <p>Será que você sabe responder as perguntas?</p>
-        <div class="grafico_racas">
+        <div class="grafico_acertos">
+            
             <div>
-                <canvas id="indice_raças"></canvas>
+                <canvas id="indice_respostas"></canvas>
             </div>
         </div>
     </div>
@@ -112,8 +113,8 @@
 
 </html>
 
-<script src="questao.js"></script>
-<script src="app.js"></script>
+<script src="../public/js/questao.js"></script>
+<script src="../public/js/app.js"></script>
 <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script> -->
 <!-- <script src="js/dash.js"></script> -->

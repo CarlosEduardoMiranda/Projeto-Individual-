@@ -26,7 +26,7 @@ body{
   height: 90px;
 }
 .header picture{
-  background-image: url(../imagens/logoLibertadores.png);
+  background-image: url(../assets/logoLibertadores.png);
   background-size: cover;
   background-repeat: no-repeat;
   width: 80px;
@@ -362,7 +362,7 @@ justify-content: space-between;
  .linha-branca{
   width: 100%;
   height: 200px;
-  background-image: url(../imagens/original.png);
+  background-image: url(../assets/original.png);
   text-align: center;
   flex-direction: column;
   display: flex;
@@ -479,7 +479,7 @@ justify-content: space-between;
 }
 
 .Imagens{
-  background-image: url(../imagens/FLUxBOCA-JOHN_KENNEDY_2-2.jpg);
+  background-image: url(../assets/FLUxBOCA-JOHN_KENNEDY_2-2.jpg);
   background-position: center center;
   width: 100%;
   height: 320px;
@@ -488,11 +488,11 @@ justify-content: space-between;
 }
 
 .imagem-2 {
-  background-image: url(../imagens/dsj4010.webp);
+  background-image: url(../assets/anitta.webp);
 }
 
 .imagem-3 {
-  background-image: url(../imagens/Time-do-Ano-Libertadores.webp);
+  background-image: url(../assets/Time-do-Ano-Libertadores.webp);
 }
 
 .card-content {
@@ -526,7 +526,7 @@ justify-content: space-between;
   flex-direction: column;
 }
 .footer picture{
-  background-image: url(../imagens/logoLibertadores.png);
+  background-image: url(../assets/logoLibertadores.png);
   background-size: cover;
   background-repeat: no-repeat;
   width: 17.5%;

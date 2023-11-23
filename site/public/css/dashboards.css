@@ -1,9 +1,36 @@
 /* pagina mural */
 
-*,
 body {
-  font-family: "Exo 2", sans-serif;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
 }
+
+.dashboards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.dashboard1 {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.dashboard1 h1 {
+  color: #333;
+}
+
+#myChart {
+  max-width: 95%;
+  margin-top: 20px;
+}
+
 
 /* .label-captura {
   display: flex;

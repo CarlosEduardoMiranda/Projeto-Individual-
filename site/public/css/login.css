@@ -11,7 +11,7 @@ body {
     align-items: center;
     color: rgb(0, 0, 0);
     font-family: 'Arial', sans-serif;
-    background-image: url(../imagens/download.jfif);
+    background-image: url(../assets/fotologin.jfif);
     background-repeat: no-repeat;
     background-size: cover; 
     background-image: blur(1px); /* Ajuste o valor do desfoque conforme desejado */

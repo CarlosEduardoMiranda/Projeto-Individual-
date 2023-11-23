@@ -48,7 +48,7 @@ body {
     border-radius: 5px;
 }
 
-.login-button {
+.login {
     background-color: #000000;
     color: white;
     border: none;
@@ -57,6 +57,6 @@ body {
     cursor: pointer;
 }
 
-.login-button:hover {
+.login:hover {
     background-color: #daa520;
 }

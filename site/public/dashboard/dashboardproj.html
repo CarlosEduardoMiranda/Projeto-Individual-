@@ -10,7 +10,7 @@
 <body>
     <div class="dashboards">
         <div class="dashboard1">
-            <h1>Acertos da Copa Libertadores</h1>
+            <h1>Ver Estastísticas</h1>
             <canvas id="myChart" class="dashboards"></canvas>
         </div>
 
@@ -21,17 +21,16 @@
         new Chart(ctx,{
             type: 'bar',
             data: {
-                labels: ['Acertos', 'Erros'],
+                labels: ['Acertos'],
                 datasets: [{
-                    label: 'Copa Libertadores',
+                    label: 'Acerto-Quiz',
                     borderColor: 'rgb(0, 255, 0)',
                     backgroundColor: 'rgb(0, 255, 0)',
                     data: [14, 10, 12, 8, 0, 0, 0, 0],
                     borderWidth: 3,
                 },{
-                    label: 'Copa Libertadores',
-                    borderColor: 'rgb(0, 255, 0)',
-                    backgroundColor: 'rgb(0, 255, 0)',
+                    label: 'Erros-Quiz',
+                    backgroundColor: 'rgb(255,0,0)',
                     data: [14, 10, 12, 8, 0, 0, 0, 0],
                     borderWidth: 3,
                 }]

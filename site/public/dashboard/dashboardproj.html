@@ -7,18 +7,15 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="../css/dashboards.css">
 </head>
-<body>
-    <div class="dashboards">
-        <div class="dashboard1">
-            <h1>Ver Estastísticas</h1>
-            <canvas id="myChart" class="dashboards"></canvas>
-        </div>
-
-
+<div class="dashboards">
+    <div class="dashboard1">
+        <h1>Ver Estatísticas</h1>
+        <canvas id="myChart" class="dashboards"></canvas>
+    </div>
 
     <script>
         const ctx = document.getElementById('myChart');
-        new Chart(ctx,{
+        new Chart(ctx, {
             type: 'bar',
             data: {
                 labels: ['Acertos'],
@@ -28,38 +25,38 @@
                     backgroundColor: 'rgb(0, 255, 0)',
                     data: [14, 10, 12, 8, 0, 0, 0, 0],
                     borderWidth: 3,
-                },{
+                }, {
                     label: 'Erros-Quiz',
-                    backgroundColor: 'rgb(255,0,0)',
+                    backgroundColor: 'rgb(255, 0, 0)',
                     data: [14, 10, 12, 8, 0, 0, 0, 0],
                     borderWidth: 3,
                 }]
-
-
-
-
             }
-
-
-
-
         })
-
-
-
-
-
-
-
-
-
     </script>
 
+    <div class="dashboards2">
+        <h1>Ranking de pontuação</h1>
+        <canvas id="myChart2" class="dash2"></canvas>
+    </div>
 
-     <!-- <div class="dashboards2">
-        <h1>asaasaasasasasas</h1>
-        <canvas id="myChart2" class="dash"></canvas>
-    </div></div> -->
+    <script>
+        const ctx2 = document.getElementById('myChart2');
+        new Chart(ctx2, {
+            type: 'bar',
+            data: {
+                labels: ['Categoria A', 'Categoria B', 'Categoria C', 'Categoria D', 'Categoria E'],
+                datasets: [{
+                    label: 'Pontos Conquistados',
+                    borderColor: 'rgb(0, 0, 255)',
+                    backgroundColor: 'rgb(255,255,255)',
+                    data: [20, 18, 16, 14, 12, 10, 8, 6, 4, 2, 0],
+                    borderWidth: 3,
+                }]
+            },
+        });
+    </script>
+</div>
 
 
 </body>

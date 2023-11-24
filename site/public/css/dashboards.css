@@ -8,22 +8,36 @@ body {
 
 .dashboards {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   height: 100vh;
-  background-color: #ffffff;
+  background-image: linear-gradient(to right,  #000000 , #daa520, #000000 );
 }
 
 .dashboard1 {
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
-  padding: 20px;
+  padding: 10px;
   text-align: center;
+  
 }
 
 .dashboard1 h1 {
   color: #333;
+}
+
+#myChart {
+  max-width: 95%;
+  margin-top: 20px;
+}
+
+.dashboards2 {
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
 }
 
 #myChart {

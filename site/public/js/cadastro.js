@@ -1,25 +1,46 @@
 
 
 function cadastrar(){
-var firstname = input_firstname.value;
-var lastname = input_lastname.value;
-var email = input_email.value;
-var number = input_number.value;
-var password = input_password.value;
-var confirmpassword = input_confirmpassword.value;
+var nomeVar = input_nome.value;
+var sobrenomeVar = input_sobrenome.value;
+var emailVar = input_email.value;
+var celularVar = input_celular.value;
+var senhaVar = input_senha.value;
+var confirmarsenhaVar = input_confirmarsenha.value;
 
 if (
-  firstname == "" ||
-  lastname == "" ||
-  email == "" ||
-  number == "" ||
-  password == "" ||
-  confirmpassword == ""
+  nomeVar == "" ||
+  sobrenomeVar == "" ||
+  emailVar == "" ||
+  celularVar == "" ||
+  senhaVar == ""
 ) { 
-  cardErro.style.display = "block";
-  mensagem_erro.innerHTML =
-    "(Mensagem de erro para todos os campos em branco)";
-
+    alert ("Mensagem de erro para todos os campos em branco");
+} else {
+  fetch("/usuarios/cadastrar", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      // crie um atributo que recebe o valor recuperado aqui
+      // Agora vá para o arquivo routes/usuario.js
+      nomeServer: nomeVar,
+      sobrenomeServer: sobrenomeVar,
+      emailServer: emailVar,
+      celularServer: celularVar,
+      senhaServer: senhaVar
+    }),
+  })
+    .then(function (resposta) {
+      console.log("resposta: ", resposta);
+    })
+    .catch(function (resposta) {
+      console.log(`#ERRO: ${resposta}`);
+    });
+    setTimeout(() => {
+      window.location = "./login.html";
+    }, "1000");
 
 }
 }

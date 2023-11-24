@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../public/css/stylecadastro.css">
+    <link rel="stylesheet" href="./css/stylecadastro.css">
     <title>Cadastro-Formulário</title>
+    <script src="./js/cadastro.js"></script>
 </head>
 
 <body>
     <div class="container">
         <div class="form-image">
-            <img src="../public/assets/Neymar.jfif" alt="">
+            <img src="./assets/Neymar.jfif" alt="">
         </div>
         <div class="form">
             <form action="#">
@@ -26,12 +27,12 @@
                 <div class="input-group">
                     <div class="input-box">
                         <label for="firstname">Primeiro Nome</label>
-                        <input id="input_firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome">
+                        <input id="input_nome" type="text" name="firstname" placeholder="Digite seu primeiro nome">
                     </div>
 
                     <div class="input-box">
                         <label for="lastname">Sobrenome</label>
-                        <input id="input_lastname" type="text" name="lastname" placeholder="Digite seu sobrenome">
+                        <input id="input_sobrenome" type="text" name="lastname" placeholder="Digite seu sobrenome">
                     </div>
                     <div class="input-box">
                         <label for="email">E-mail</label>
@@ -40,30 +41,30 @@
 
                     <div class="input-box">
                         <label for="number">Celular</label>
-                        <input id="input_number" type="tel" name="number" maxlength="11" placeholder="(xx) xxxx-xxxx">
+                        <input id="input_celular" type="tel" name="number" maxlength="11" placeholder="(xx) xxxx-xxxx">
                     </div>
 
                     <div class="input-box">
                         <label for="password">Senha</label>
-                        <input id="input_password" type="password" name="password" placeholder="Digite sua senha">
+                        <input id="input_senha" type="password" name="password" placeholder="Digite sua senha">
                     </div>
 
 
                     <div class="input-box">
                         <label for="confirmPassword">Confirme sua Senha</label>
-                        <input id="input_confirmPassword" type="password" name="confirmPassword" placeholder="Digite sua senha novamente" >
+                        <input id="input_confirmarsenha" type="password" name="confirmPassword" placeholder="Digite sua senha novamente" >
                     </div>
 
                 </div>
 
                 <div class="continue-button">
-                    <button><a href="../public/login.html">Continuar</a> </button>
+                    <button onclick="cadastrar()">Continuar</button>
                 </div>
             </form>
         </div>
     </div>
 
-    <script src="cadastro.js"></script>
+   
 </body>
 
 </html>

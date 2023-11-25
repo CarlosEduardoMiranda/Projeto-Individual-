@@ -1,6 +1,7 @@
 var usuarioModel = require("../models/usuarioModel");
-var aquarioModel = require("../models/aquarioModel");
+// var aquarioModel = require("../models/aquarioModel");
 
+//req, res req ele recebe os dados e res ele manda pro banco de dados 
 function autenticar(req, res) {
     var email = req.body.emailServer;
     var senha = req.body.senhaServer;
@@ -13,14 +14,27 @@ function autenticar(req, res) {
 
         usuarioModel.autenticar(email, senha)
             .then(
-                function (resultado){
-                    if(resultado.length == 1){
+                function (resultado) {
+                    console.log(`\nResultados encontrados: ${resultado.length}`);
+                    console.log(`Resultados: ${JSON.stringify(resultado)}`);
+                    // transforma JSON em String
+
+
+                    if (resultado.length == 1) {
+                        console.log(resultado);
                         res.json({
-                            nome: resultado[0].nome,
+                            id: resultado[0].idusuario,
                             email: resultado[0].email,
-                            idUsuario: resultado[0].idUsuario,
-                        })
-                    } else if(resultado.length == 0){
+                            nome: resultado[0].nome,
+                            // senha: resultado[0].senha,
+                            
+                        });
+
+                        if (resultado.length > 0) {
+                          
+                        }
+
+                    } else if (resultado.length == 0) {
                         res.status(403).send("Email e/ou senha inválido(s)");
                     } else {
                         res.status(403).send("Mais de um usuário com o mesmo login e senha!");
@@ -39,11 +53,11 @@ function autenticar(req, res) {
 
 function cadastrar(req, res) {
     // Crie uma variável que vá recuperar os valores do arquivo cadastro.html
+    var email = req.body.emailServer;
+    var senha = req.body.senhaServer;
+    var celular = req.body.celularServer;
     var nome = req.body.nomeServer;
     var sobrenome = req.body.sobrenomeServer;
-    var email = req.body.emailServer;
-    var celular = req.body.celularServer;
-    var senha = req.body.senhaServer;
 
     // Faça as validações dos valores
     if (nome == undefined) {

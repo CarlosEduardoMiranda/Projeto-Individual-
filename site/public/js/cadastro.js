@@ -34,13 +34,14 @@ if (
   })
     .then(function (resposta) {
       console.log("resposta: ", resposta);
+      setTimeout(() => {
+        window.location = "./login.html";
+      }, "1000");
     })
     .catch(function (resposta) {
       console.log(`#ERRO: ${resposta}`);
     });
-    setTimeout(() => {
-      window.location = "./login.html";
-    }, "1000");
+   
 
 }
 }

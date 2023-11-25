@@ -71,6 +71,7 @@ function nova_questao() {
   contador_questoes++;
 }
 
+
 function pegar_resultado(element) {
   var id = Number(element.id);
 
@@ -174,6 +175,27 @@ function resultado_quiz() {
     porcentagem.toFixed(2) + "%";
   container_resultado.querySelector(".total_score").innerHTML =
     respostas_corretas + " / " + limite_de_questoes;
+    fetch("/empresas/quizz", {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body:JSON.stringify({
+        acertos: respostas_corretas,
+        erros: respostas_incorretas,
+        id_usuario: sessionStorage.ID_USUARIO
+      })
+
+    })
+    .then(
+      reposta => {
+        if(reposta.status == (200)){
+          reposta.json().then(reposta => {
+            console.log(`Sucesso ${JSON.stringify(reposta)}`)
+          })
+        } else {
+          console.log(`Houve um erro`)
+        }
+      }
+    )
 }
 
 function resetar_quiz() {

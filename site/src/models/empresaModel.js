@@ -1,27 +1,23 @@
 var database = require("../database/config");
 
-function buscarPorId(id) {
-  var query = `select * from empresa where id = '${id}'`;
+function inseri_quiz(id){
+  var query = `insert into quiz(id_usuario)values (${id})`;
+   
 
   return database.executar(query);
 }
 
-function listar() {
-  var query = `select * from empresa`;
+function verificar_quiz(id){
+  var query = `select * from quiz where id_usuario = '${id}'`;
 
   return database.executar(query);
 }
 
-function buscarPorCnpj(cnpj) {
-  var query = `select * from empresa where cnpj = '${cnpj}'`;
+function grafico(acertos, erros, fkquiz) {
+  var query = `insert into tentativa(acertos, erros, fk_quiz)values (${acertos}, ${erros}, ${fkquiz})`;
 
   return database.executar(query);
 }
 
-function cadastrar(razaoSocial, cnpj) {
-  var query = `insert into empresa (razao_social, cnpj) values ('${razaoSocial}', '${cnpj}')`;
 
-  return database.executar(query);
-}
-
-module.exports = { buscarPorCnpj, buscarPorId, cadastrar, listar };
+module.exports = { grafico, verificar_quiz, inseri_quiz};

@@ -4,7 +4,7 @@ var quiz = [
     {
       q: "Qual clube venceu a primeira edição da Copa Libertadores em 1960?",
       opcoes: ['Santos', 'River Plate', 'Indepiendente', 'Penãrol'],
-      resposta: 0
+      resposta: 3
     },
   
     {
@@ -16,7 +16,7 @@ var quiz = [
     {
       q: "Qual país não sediou a final da Copa Libertadores?",
       opcoes: ['Uruguai', 'Paraguai', 'Equador', 'Chile'],
-      resposta: 0
+      resposta: 1
     },
   
     {
@@ -32,7 +32,7 @@ var quiz = [
     },
 
     {
-        q: "Quem é jogador brasileiro com mais gols da Libertadores?",
+        q: "Qual time tem a maior quantidade de times",
         opcoes: ['Fred', 'Romário', 'Gabigol', 'Pelé'],
         resposta: 2
       },
@@ -52,14 +52,14 @@ var quiz = [
 
       {
         q: " Qual estádio sediou a final da Copa Libertadores em 2021?",
-        opcoes: ['Estádio Monumental', 'Maracanã', ' La Bombonera', 'Estádio Diego Armando Maradona'],
+        opcoes: ['Estádio Monumental', 'Maracanã', ' La Bombonera', 'Montevídeu'],
         resposta: 0
       },
 
       {
-        q: "Quem é o uníco jogador brasileiro a ser tri-campeão da libertadores?",
-        opcoes: ['Gabigol', 'Felipe Melo', 'Weverton', 'Fábio Santos'],
-        resposta: 1
+        q: "Qual é o time com mais participações em Libertadores",
+        opcoes: ['Grêmio', 'Santos', 'São Paulo', 'Palmeiras'],
+        resposta: 3
       },
 
 

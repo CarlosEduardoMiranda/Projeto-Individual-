@@ -6,7 +6,7 @@
     box-sizing: border-box;
     font-family: 'mulish';
     text-decoration: none;
-  }
+      }
   body{
     width: 100%;
    background-color: #000;
@@ -68,6 +68,13 @@
   /* conteudos */
   .conteudo {
     width: 100%;
+    background-image: url('../assets/boca-comemoração.jpg');
+    background-size: cover; /* para cobrir todo o corpo */
+    background-repeat: no-repeat; /* para não repetir a imagem */
+    background-position: center;
+    z-index: -5;
+
+
   }
   .nav{
     height: 60px;

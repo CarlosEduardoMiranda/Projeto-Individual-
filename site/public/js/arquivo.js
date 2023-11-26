@@ -18,6 +18,7 @@ function gerargrafico(resposta){
             labels: listateste,
             datasets: [{
                 label: 'Acertos por Tentativas',
+                backgroundColor: "black",
                 data: listagrafico,
                 borderWidth: 1
               }]
@@ -38,6 +39,7 @@ function gerargrafico(resposta){
             labels: listateste,
             datasets: [{
                 label: 'Erros por Tentativas',
+                backgroundColor: "gold",
                 data: listaerros,
                 borderWidth: 1
               }]

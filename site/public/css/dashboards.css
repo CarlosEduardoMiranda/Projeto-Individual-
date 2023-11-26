@@ -2,23 +2,32 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  margin: 0;
+  margin-left: 5%;
+  margin-right: 5%;
   padding: 0;
-  background-color: black;
+  background-image: url(../assets/Backgroundliberta.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: space-between;
+}
+
+canvas{
+color: black;
 }
 
 .dashboards {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   height: 100vh;
-  background-color: white;
 }
 
 .dashboard1 {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(186, 186, 186);
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(254, 72, 72, 0.1);
   padding: 10px;
   text-align: center;
   
@@ -42,7 +51,7 @@ body {
 }
 
 #myChart {
-  max-width: 96%;
+  max-width: 95%;
   margin-top: 20px;
 }
 

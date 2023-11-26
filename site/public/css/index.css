@@ -3,7 +3,6 @@
   padding: 0;
   margin: 0;
   border: 0;
-  scroll-behavior: smooth;
 }
 
 body{
@@ -202,7 +201,6 @@ h5 {
 
 .card:hover {
   transform: translateY(-5px);
-  cursor: pointer;
   background-color: #000000;
 }
 

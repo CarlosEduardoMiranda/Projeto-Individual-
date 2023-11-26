@@ -181,7 +181,7 @@ function resultado_quiz() {
       body:JSON.stringify({
         acertos: respostas_corretas,
         erros: respostas_incorretas,
-        id_usuario: sessionStorage.ID_USUARIO
+        fkusuario: sessionStorage.ID_USUARIO
       })
 
     })

@@ -22,7 +22,6 @@ function login() {
       console.log("ESTOU NO THEN DO entrar()!")
 
       if (resposta.ok) {
-        alert("aaaaaaaaaaaaaaaaaaaa")
         resposta.json().then(json => {
           sessionStorage.EMAIL_USUARIO = json.email;
           sessionStorage.NOME_USUARIO = json.nome;

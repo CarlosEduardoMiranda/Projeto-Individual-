@@ -20,10 +20,27 @@ function cadastrar(nome, sobrenome, email, celular, senha) {
     `;
     console.log("Executando a instrução SQL: \n" + instrucao);
     return database.executar(instrucao);
+
 }
+
+function dashboard(idusuario){
+    var instrucao = `
+    select * from quiz where fkusuario = ${idusuario};`
+    ;
+    console.log("Executando a instrução SQL: \n" + instrucao);
+    return database.executar(instrucao);
+}
+
+
+
+
+
+
+
 
 //exporta os modulos autenticar e cadastrar, isso pra todos 
 module.exports = {
     autenticar,
-    cadastrar
+    cadastrar,
+    dashboard
 };

@@ -9,34 +9,20 @@
 </head>
 <div class="dashboards">
     <div class="dashboard1">
-        <h1>Ver Estatísticas</h1>
+        <h1>Quiz erros</h1>
+        <canvas id="myChart2" class="dashboards"></canvas>
+    </div>
+</div>
+<div class="dashboards">
+    <div class="dashboard1">
+        <h1>Quiz acertos</h1>
         <canvas id="myChart" class="dashboards"></canvas>
     </div>
-
-    <script>
-        const ctx = document.getElementById('myChart');
-        new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: ['Acertos'],
-                datasets: [{
-                    label: 'Acerto-Quiz',
-                    borderColor: 'rgb(0, 255, 0)',
-                    backgroundColor: 'rgb(0, 255, 0)',
-                    data: [14, 10, 12, 8, 0, 0, 0, 0],
-                    borderWidth: 3,
-                }, {
-                    label: 'Erros-Quiz',
-                    backgroundColor: 'rgb(255, 0, 0)',
-                    data: [14, 10, 12, 8, 0, 0, 0, 0],
-                    borderWidth: 3,
-                }]
-            }
-        })
-    </script>
-
 </div>
 
+
+
+<script src="../js/arquivo.js"></script>
 
 </body>
 </html>

@@ -91,7 +91,39 @@ function cadastrar(req, res) {
     }
 }
 
+
+
+
+    function dashboard(req, res){
+        var usuario = req.params.idusuario
+        usuarioModel.dashboard(usuario)
+        .then(
+          function (resultadodashboard){
+            console.log(`resultado:${JSON.stringify(resultadodashboard)}`);
+            if(resultadodashboard.length >= 0){
+                console.log(resultadodashboard);
+                res.status(200).json(resultadodashboard);
+            } else {
+                res.status(404).send("Sua lsita está vazia")
+            }
+          }
+        )
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 module.exports = {
     autenticar,
-    cadastrar
+    cadastrar,
+    dashboard
 }
